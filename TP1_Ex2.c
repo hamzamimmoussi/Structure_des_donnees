@@ -28,8 +28,8 @@ Liste construireListe() {
     Liste L = NULL;
 
     L = insererEnTete(L, "Iphone", 5000, 20);
-    L = insererEnTete(L, "Samsung", 1500, 75);
-    L = insererEnTete(L, "Nokia", 2000, 10);
+    L = insererEnTete(L, "Samsung", 2500, 75);
+    L = insererEnTete(L, "Nokia", 1500, 10);
 
     return L;
 }
@@ -38,7 +38,7 @@ void afficherListe(Liste L) {
         printf("Nom: %s\n", L->data.nom);
         printf("Prix: %.2f\n", L->data.prix);
         printf("Quantité vendue: %d\n", L->data.nombre);
-        printf("------------------------\n");
+        printf("\n");
         L = L->suivant;
     }
 }
@@ -73,7 +73,7 @@ int main() {
 
     Liste L2 = NULL;
     L2 = insererEnTete(L2, "Huawei", 3000, 15);
-    L2 = insererEnTete(L2, "Xiaomi", 2500, 30);
+    L2 = insererEnTete(L2, "Xiaomi", 1800, 30);
 
     printf("\nListe 2:\n");
     afficherListe(L2);
